@@ -3,7 +3,7 @@ package com.example.a2007026;
 public class Square {
     private double side_length;
 
-    public Square(String name, double side) {
+    public Square(String name, double side_length) {
         this.side_length = side_length;
     }
 

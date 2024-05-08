@@ -36,14 +36,25 @@ public class MainActivity extends AppCompatActivity {
             Circle circle = new Circle("circle", 5);
             String Area = "Area : " + circle.area();
             String Perimeter = "Perimeter : " + circle.perimeter();
-            textView1.setText(Area + "\n" + Perimeter);
+//            textView1.setText(Area + "\n" + Perimeter);
+            textView1.setText("Circle");
         });
 
         SquareBtn.setOnClickListener(v -> {
             Square square = new Square("square", 5);
             String Area = "Area : " + square.area();
             String Perimeter = "Perimeter : " + square.perimeter();
-            textView1.setText(Area + "\n" + Perimeter);
+
+//            textView1.setText(Area + "\n" + Perimeter);
+            textView1.setText("Square");
+        });
+
+        TriangleBtn.setOnClickListener(v -> {
+            Triangle triangle = new Triangle("triangle", 5, 5, 5);
+            String Area = "Area : " + triangle.area();
+            String Perimeter = "Perimeter : " + triangle.perimeter();
+//            textView1.setText(Area + "\n" + Perimeter);
+            textView1.setText("Triangle");
         });
 
 
@@ -51,19 +62,19 @@ public class MainActivity extends AppCompatActivity {
         RedBtn.setOnClickListener(v -> {
             Red red = new Red();
             red.showColor();
-            textView2.setText("The color is: Red");
+            textView2.setText("Color: Red");
         });
 
         BlueBtn.setOnClickListener(v -> {
             Blue blue = new Blue();
             blue.showColor();
-            textView2.setText("The color is: Blue");
+            textView2.setText("Color: Blue");
         });
 
         GreenBtn.setOnClickListener(v -> {
             Green green = new Green();
             green.showColor();
-            textView2.setText("The color is: Green");
+            textView2.setText("Color: Green");
         });
 
     }
